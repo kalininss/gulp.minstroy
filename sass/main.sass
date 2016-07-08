@@ -1,0 +1,308 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.jssorb05
+  position: absolute
+  div
+    position: absolute
+    width: 10px
+    height: 10px
+    cursor: pointer
+    border-radius: 50%
+    background: #fff
+  .av
+    position: absolute
+    width: 10px
+    height: 10px
+    overflow: hidden
+    background: #0071AD
+    cursor: pointer
+  div
+    &:hover
+      background-position: -37px -7px
+  .av
+    &:hover
+      background-position: -37px -7px
+    background-position: -67px -7px
+  .dn
+    background-position: -97px -7px
+    &:hover
+      background-position: -97px -7px
+
+.jssora22l, .jssora22r
+  display: block
+  position: absolute
+  width: 40px
+  height: 58px
+  cursor: pointer
+  background: url('../img/a22.png') center center no-repeat
+  overflow: hidden
+.jssora22l
+  background-position: -10px -31px
+.jssora22r
+  background-position: -70px -31px
+.jssora22l:hover
+  background-position: -130px -31px
+.jssora22r:hover
+  background-position: -190px -31px
+.jssora22l.jssora22ldn
+  background-position: -250px -31px
+.jssora22r.jssora22rdn
+  background-position: -310px -31px
+
+.slider__text
+	position: absolute
+	top: 120px
+	width: 830px
+	left: 50%
+	margin-left: -415px
+	font-weight: bold
+	line-height: 1.2
+	color: #fff
+	font-size: 48px
+	text-align: center
+	text-shadow: 0px 0 4px rgba(131,215,255,0.1), 0px 0 5px rgba(0,0,0,0.5)
+.slider__btn
+	color: #000
+	display: inline-block
+	background: #fff
+	border-radius: 2px
+	position: absolute
+	width: 200px
+	left: 50%
+	margin-left: -100px
+	top: 250px
+	text-align: center
+	font-size: 18px
+	padding: 5px 0 6px
+	box-shadow: 0 5px 5px rgba(0,0,0,0.7)
+	&:hover
+		text-decoration: none
+		color: #000
+
+.row__big-link
+	margin-top: 50px
+	margin-bottom: 20px
+.big-link
+	display: block
+	border-radius: 5px
+	border: 2px solid #C6C6C6
+	text-align: center
+	color: #333
+	padding: 35px 0
+	transition: 0.15s
+	&:hover
+		color: #333
+		text-decoration: none
+		border-color: #175f8b
+.big-link__text
+	font-family: $head
+	font-size: 36px
+	font-weight: bold
+	vertical-align: middle
+	display: inline-block
+	margin: 0	
+.icon_front
+	display: inline-block
+	content: " "
+	background-image: url(../img/sprite-frontpage.png)
+	margin-right: 10px
+	vertical-align: middle
+.icon_front__left
+	width: 58px
+	height: 57px
+.icon_front__right
+	margin-top: 7px
+	margin-bottom: 7px
+	width: 69px
+	height: 43px
+	background-position: -61px 0
+.news-date
+	font-size: 16px
+	font-weight: bold
+	padding-bottom: 10px
+.news__head
+	color: #175f8b
+.thumbnail-news
+	width: 100%
+.text_black
+	color: #333
+
+.thumbnail-effect
+	position: relative
+	display: block
+	&:after
+		transition: 0.2s
+		opacity: 0
+		background: rgba(221,221,221,.34)
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		content: ""
+	&:hover:after
+		opacity: 1
+.btn_all-news
+	float: right
+	padding: 3px 20px
+	padding-right: 20px
+	margin-top: 10px
+.front-news
+	margin-bottom: 30px
+
+.section_branches
+	background-image: url(../img/bg-branches.jpg)
+	background-size: cover
+	background-position: 50% 50%
+	text-align: center
+	padding-bottom: 30px
+	h2
+		color: #fff
+		text-shadow: 0px 0 4px rgba(131,215,255,0.1), 0px 0 5px rgba(0,0,0,0.5)
+.branches
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		display: inline-block
+		border: 3px solid #175F8B
+		color: #175f8b
+		font-weight: bold
+		font-size: 16px
+		margin: 15px
+		transition: 0.15s
+		a
+			padding: 7px 20px
+			transition: 0.15s
+		&:hover
+			background: #175f8b
+			a
+				color: #fff
+				text-decoration: none
+
+.section_attention h2
+	font-size: 30px
+	color: #175f8b
+	text-align: center
+	text-transform: none
+	font-family: $main
+	margin: 1em 0
+.attention-block
+	text-align: center
+	p
+		margin-bottom: 0
+.attention-block__img
+	width: 225px
+	height: 225px
+	border-radius: 50%
+	overflow: hidden
+	margin: 0 auto
+.attention-block__inner
+	background: #fff
+	padding: 16px 16px 16px 16px
+.pattern-border
+	background-image: url(../img/pattern-border.png)
+	padding: 3px
+.col-big-padding
+	padding-left: 30px
+	padding-right: 30px
+
+.section_open-department
+	margin-top: 70px
+	background-image: url(../img/bg-open-department.jpg)
+	background-size: cover
+	text-align: center
+	padding-bottom: 30px
+	h2
+		color: #0070b2
+.departments
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		display: inline-block
+		a
+			text-decoration: underline
+			font-weight: bold
+			font-size: 18px
+			margin: 10px 20px
+			display: inline-block
+			&:hover
+				text-decoration: none
+
+
+.nav_footer
+	text-align: center
+	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
+.nav_footer li 
+	margin-left: 20px
+	margin-right: 20px
+	display: inline-block
+	a
+		color: #000
+.nav_footer li a:hover
+	text-decoration: underline
+.nav_footer li a:after
+	display: none
+.logo__text_small
+	font-size: 16px
+	width: 180px
+.sprite-main_mail
+	background-position: -91px -77px
+	width: 13px
+	margin-right: 7px
+	height: 10px
+.sprite-main_phone
+	background-position: -116px -77px
+	width: 10px
+	margin-right: 10px
+	height: 10px
+.sprite-main_map
+	background-position: -137px -75px
+	width: 14px
+	margin-right: 6px
+	height: 14px
+.footer-contact
+	margin: 42px 0
+	line-height: 0.8
+	a
+		color: #333
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media"

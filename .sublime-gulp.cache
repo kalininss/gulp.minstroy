@@ -1,0 +1,1 @@
+{"D:\\VirtualFolder\\gulp.minstroy\\gulpfile.js":{"sha1":"cc3964b256076845748e51a00ad8f14f72be9886","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles scripts"},"styles":{"name":"styles","dependencies":""},"scripts":{"name":"scripts","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}

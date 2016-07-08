@@ -1,0 +1,200 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $main
+	overflow-x: hidden
+	color: #333
+
+h1
+h2
+	font-size: 60px
+	font-family: $head
+	font-weight: bold
+	text-transform: uppercase
+	margin: 0.4em 0
+h3
+	font-size: 24px
+h4
+	font-size: 12px
+a
+	color: #175F8B
+.text_black
+	color: #000
+.text_underline
+	text-decoration: underline
+.header__top
+	line-height: 40px
+	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
+	text-align: right
+.sprite-main
+	background-image: url(../img/sprite-main.png)
+	display: inline-block
+	content: ""
+	cursor: pointer
+	vertical-align: middle
+.sprite-main_loop
+	width: 19px
+	height: 19px
+	background-position: -46px -73px
+	margin: 0 5px
+.sprite-main_glass
+	background-position: -1px -75px
+	margin-left: 5px
+	width: 32px
+	height: 15px
+	margin-right: 12px
+.sprite-descr
+	display: inline-block
+	h4
+		display: inline-block
+		line-height: 1
+		margin: 0
+	&:hover .text_underline
+		text-decoration: none
+.sprite-main__divide
+	width: 1px
+	height: 40px
+	background: #ddd
+	display: inline-block
+	vertical-align: middle
+	margin-top: -2px
+
+.header__mid
+	border-bottom: 1px solid #C6C6C6
+.logo
+	padding: 37px 0
+	display: inline-block
+.logo:hover
+	text-decoration: none
+.logo__text
+	display: inline-block
+	font-size: 24px
+	font-family: $head
+	color: #000
+	font-weight: bold
+	width: 250px
+	line-height: 1.3
+	vertical-align: middle
+	text-transform: uppercase
+	margin-left: 20px
+.btn
+	border: 3px solid #175F8B
+	color: #175F8B
+	padding: 5px 51px
+	transition: 0.15s
+	font-weight: bold
+	&:hover
+		color: #fff
+		background: #175F8B
+		text-decoration: none
+.contact
+	margin: 30px 0
+	text-align: right
+	line-height: 1.6
+	vertical-align: middle
+	margin-top: 47px
+.sprite-soc
+	width: 30px
+	height: 30px
+	margin-top: 15px
+	margin-left: 5px
+	transition: 0.3s
+.sprite-main_fb
+	background-position: 0 0
+	&:hover
+		background-position: 0 -30px	
+.sprite-main_tw
+	background-position: -30px 0
+	&:hover
+		background-position: -30px -30px			
+.sprite-main_vk
+	background-position: -60px 0
+	&:hover
+		background-position: -60px -30px			
+.sprite-main_ok
+	background-position: -90px 0
+	width: 29px
+	&:hover
+		background-position: -90px -30px		
+.sprite-main_yt
+	background-position: -118px 0
+	&:hover
+		background-position: -118px -30px			
+.sprite-main_in
+	background-position: -149px 0
+	&:hover
+		background-position: -149px -30px		
+
+.nav
+	position: relative
+	list-style-type: none
+	color: #000
+	text-transform: uppercase
+	padding: 0
+	margin: 0
+	li
+		position: relative
+		padding: 14px 0
+	li:hover	.nav_second
+		z-index: 1
+		opacity: 1
+	a
+		color: #000
+		&:hover
+			text-decoration: none
+		&:after
+			display: inline-block
+			clear: both
+			margin-left: 12px
+			content: ""
+			width: 10px
+			height: 7px
+			background-image: url(../img/sprite-main.png)
+			background-position: -73px -79px
+.nav_flex
+	display: flex
+	justify-content: space-between
+.nav_second
+	display: inline-block
+	transition: opacity .15s ease-in-out
+	opacity: 0
+	top: 50px
+	left: 0
+	position: absolute
+	z-index: -1
+	border-left: 5px solid #0070B2
+	padding: 0 20px
+	background: #fff
+	box-shadow: 0px 0 2px rgba(0,0,0,0.5)
+	&:hover
+		z-index: 1
+		opacity: 1
+	li
+		padding: 8px 0
+	a:hover 
+		color: #0070b2
+	a:after
+		display: none
+.sprite-main_mobile-glass
+	background-position: -1px -106px
+	width: 49px
+	height: 24px
+.sprite-main_mobile-loop
+	background-position: -67px -97px
+	width: 40px
+	height: 41px
+.sprite-main_mobile-menu
+	background-position: -121px -100px
+	width: 41px
+	height: 35px
+
+.mobile-icons
+	padding: 37px 0
+	text-align: right
+	.sprite-main
+		margin-left: 40px

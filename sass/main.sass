@@ -27,56 +27,55 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+
+	
+
+// -------
+// СЛАЙДЕР
+// -------
 .jssorb05
-  position: absolute
-  div
-    position: absolute
-    width: 10px
-    height: 10px
-    cursor: pointer
-    border-radius: 50%
-    background: #fff
-  .av
-    position: absolute
-    width: 10px
-    height: 10px
-    overflow: hidden
-    background: #0071AD
-    cursor: pointer
-  div
-    &:hover
-      background-position: -37px -7px
-  .av
-    &:hover
-      background-position: -37px -7px
-    background-position: -67px -7px
-  .dn
-    background-position: -97px -7px
-    &:hover
-      background-position: -97px -7px
+	position: absolute
+	div
+		position: absolute
+		width: 10px
+		height: 10px
+		cursor: pointer
+		border-radius: 50%
+		background: #fff
+	.av
+		position: absolute
+		width: 10px
+		height: 10px
+		overflow: hidden
+		background: #0071AD
+		cursor: pointer 
+	div
+		&:hover
+			background-position: -37px -7px
+	.av
+		&:hover
+			background-position: -37px -7px
+		background-position: -67px -7px
+	.dn
+		background-position: -97px -7px
+		&:hover
+			background-position: -97px -7px
 
 .jssora22l, .jssora22r
-  display: block
-  position: absolute
-  width: 40px
-  height: 58px
-  cursor: pointer
-  background: url('../img/a22.png') center center no-repeat
-  overflow: hidden
+	display: block
+	position: absolute
+	width: 40px
+	height: 40px
+	cursor: pointer
+	background: url(../img/a33.png) center center no-repeat
+	overflow: hidden
+	border-radius: 50%
 .jssora22l
-  background-position: -10px -31px
+	background-position: -15px -41px
 .jssora22r
-  background-position: -70px -31px
-.jssora22l:hover
-  background-position: -130px -31px
-.jssora22r:hover
-  background-position: -190px -31px
-.jssora22l.jssora22ldn
-  background-position: -250px -31px
-.jssora22r.jssora22rdn
-  background-position: -310px -31px
+	background-position: -65px -41px
 
+// кастомные стили для слайдера
 .slider__text
 	position: absolute
 	top: 120px
@@ -95,9 +94,9 @@ body textarea:required:valid
 	background: #fff
 	border-radius: 2px
 	position: absolute
-	width: 200px
+	width: 212px
 	left: 50%
-	margin-left: -100px
+	margin-left: -106px
 	top: 250px
 	text-align: center
 	font-size: 18px
@@ -107,6 +106,11 @@ body textarea:required:valid
 		text-decoration: none
 		color: #000
 
+	
+
+// ------------------
+// ДВЕ БОЛЬШИЕ ССЫЛКИ
+// ------------------
 .row__big-link
 	margin-top: 50px
 	margin-bottom: 20px
@@ -116,7 +120,7 @@ body textarea:required:valid
 	border: 2px solid #C6C6C6
 	text-align: center
 	color: #333
-	padding: 35px 0
+	padding: 12px 0
 	transition: 0.15s
 	&:hover
 		color: #333
@@ -124,26 +128,24 @@ body textarea:required:valid
 		border-color: #175f8b
 .big-link__text
 	font-family: $head
-	font-size: 36px
+	font-size: 21px
+	text-align: left
 	font-weight: bold
 	vertical-align: middle
 	display: inline-block
+	line-height: 1.3
 	margin: 0	
 .icon_front
 	display: inline-block
-	content: " "
+	content: ""
+	width: 152px
+	height: 108px
 	background-image: url(../img/sprite-frontpage.png)
-	margin-right: 10px
 	vertical-align: middle
-.icon_front__left
-	width: 58px
-	height: 57px
+	margin-left: -30px
 .icon_front__right
-	margin-top: 7px
-	margin-bottom: 7px
-	width: 69px
-	height: 43px
-	background-position: -61px 0
+	background-position: -152px 0
+	margin-right: 10px
 .news-date
 	font-size: 16px
 	font-weight: bold
@@ -155,6 +157,11 @@ body textarea:required:valid
 .text_black
 	color: #333
 
+	
+
+// -------
+// НОВОСТИ
+// -------
 .thumbnail-effect
 	position: relative
 	display: block
@@ -178,15 +185,26 @@ body textarea:required:valid
 .front-news
 	margin-bottom: 30px
 
+	
+
+// --------------
+// СЕКЦИЯ ФИЛИАЛЫ
+// --------------
 .section_branches
-	background-image: url(../img/bg-branches.jpg)
-	background-size: cover
-	background-position: 50% 50%
 	text-align: center
+	overflow: hidden
+	position: relative
 	padding-bottom: 30px
 	h2
 		color: #fff
 		text-shadow: 0px 0 4px rgba(131,215,255,0.1), 0px 0 5px rgba(0,0,0,0.5)
+.parallax-front
+	position: absolute
+	width: 100%
+	z-index: -1
+	left: 0
+.parallax-front_first
+	top: 250px
 .branches
 	margin: 0
 	padding: 0
@@ -199,15 +217,22 @@ body textarea:required:valid
 		font-size: 16px
 		margin: 15px
 		transition: 0.15s
+		width: 200px
 		a
-			padding: 7px 20px
 			transition: 0.15s
+			display: inline-block
+			line-height: 2.15
 		&:hover
 			background: #175f8b
 			a
 				color: #fff
 				text-decoration: none
 
+	
+
+// ------------------------
+// СЕКЦИЯ В ЦЕНТРЕ ВНИМАНИЯ
+// ------------------------
 .section_attention h2
 	font-size: 30px
 	color: #175f8b
@@ -219,6 +244,7 @@ body textarea:required:valid
 	text-align: center
 	p
 		margin-bottom: 0
+		font-size: 18px
 .attention-block__img
 	width: 225px
 	height: 225px
@@ -235,14 +261,22 @@ body textarea:required:valid
 	padding-left: 30px
 	padding-right: 30px
 
+	
+
+// -------------------
+// СЕКЦИЯ ДЕПАРТАМЕНТЫ
+// -------------------
 .section_open-department
 	margin-top: 70px
-	background-image: url(../img/bg-open-department.jpg)
-	background-size: cover
 	text-align: center
-	padding-bottom: 30px
+	padding-bottom: 45px
+	padding-top: 15px
 	h2
 		color: #0070b2
+	position: relative
+	overflow: hidden
+.parallax-front_bottom
+	top: 500px
 .departments
 	margin: 0
 	padding: 0
@@ -250,6 +284,7 @@ body textarea:required:valid
 	li
 		display: inline-block
 		a
+			color: #0070b2
 			text-decoration: underline
 			font-weight: bold
 			font-size: 18px
@@ -258,7 +293,15 @@ body textarea:required:valid
 			&:hover
 				text-decoration: none
 
+	
 
+// -----
+// ФУТЕР
+// -----
+footer .logo
+	padding: 75px 0
+.logo__img_nonfixed
+	width: 72px
 .nav_footer
 	text-align: center
 	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
@@ -291,12 +334,121 @@ body textarea:required:valid
 	margin-right: 6px
 	height: 14px
 .footer-contact
-	margin: 42px 0
+	margin: 92px 0
 	line-height: 0.8
+	display: flex
+	justify-content: space-between
 	a
 		color: #333
 
 
+
+// ------------
+// БОКОВОЕ МЕНЮ
+// ------------
+.pushy
+	position: fixed
+	width: 200px
+	height: 100%
+	top: 0
+	z-index: 9999
+	background: #191918
+	overflow: auto
+	visibility: hidden
+	-webkit-overflow-scrolling: touch
+	ul
+		list-style-type: none
+		padding-left: 0
+	a
+		display: block
+		color: #b3b3b1
+		padding: 15px 30px
+		text-decoration: none   
+		outline: 0
+		&:hover
+			color: #FFF
+	ul:first-child
+		margin-top: 10px
+	&.pushy-left
+		left: 0
+.pushy-left
+	-webkit-transform: translate3d(-200px, 0, 0)
+	-ms-transform: translate3d(-200px, 0, 0)
+	transform: translate3d(-200px, 0, 0)
+.pushy-open-left
+	#container, .push
+		-webkit-transform: translate3d(200px, 0, 0)
+		-ms-transform: translate3d(200px, 0, 0)
+		transform: translate3d(200px, 0, 0)
+.pushy-open-left .pushy
+	-webkit-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+#container, .pushy, .push
+	transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+.site-overlay
+	display: none
+.pushy-open-left .site-overlay
+	display: block
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 9998
+	background-color: rgba(0, 0, 0, 0.5)
+	-webkit-animation: fade 500ms
+	animation: fade 500ms
+@keyframes fade
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@-webkit-keyframes fade
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+.pushy-submenu
+	ul
+		list-style-type: none
+		padding-left: 15px
+		transition: max-height 0.2s ease-in-out
+		.pushy-link
+			transition: opacity 0.2s ease-in-out
+	> a
+		position: relative
+		&::after
+			content: ''
+			display: block
+			height: 11px
+			width: 8px
+			position: absolute
+			top: 50%
+			right: 15px
+			background: url("../img/arrow.svg") no-repeat
+			-webkit-transform: translateY(-50%)
+			-ms-transform: translateY(-50%)
+			transform: translateY(-50%)
+			transition: transform 0.2s
+.pushy-submenu-closed
+	ul
+		max-height: 0
+		overflow: hidden
+	.pushy-link
+		opacity: 0
+.pushy-submenu-open
+	ul
+		max-height: 1000px
+	.pushy-link
+		opacity: 1
+	a::after
+		-webkit-transform: translateY(-50%) rotate(90deg)
+		-ms-transform: translateY(-50%) rotate(90deg)
+		transform: translateY(-50%) rotate(90deg)
+.no-csstransforms3d .pushy-submenu-closed ul
+	max-height: none
+	display: none
 
 
 

@@ -1,7 +1,9 @@
 @import "bourbon"
 @import "vars.sass"
 
+// основные стили
 body
+	padding-top: 140px
 	font-size: 14px
 	min-width: 320px
 	position: relative
@@ -9,7 +11,8 @@ body
 	font-family: $main
 	overflow-x: hidden
 	color: #333
-
+.hidden
+	display: none
 h1
 h2
 	font-size: 60px
@@ -27,9 +30,79 @@ a
 	color: #000
 .text_underline
 	text-decoration: underline
-.header__top
-	line-height: 40px
+.btn
+	border: 3px solid #175F8B
+	color: #175F8B
+	padding: 1px 51px
+	transition: 0.15s
+	font-weight: bold
+	&:hover
+		color: #fff
+		background: #175F8B
+		text-decoration: none
+
+
+// шапка
+header
+	position: fixed
+	z-index: 9
+	left: 0
+	top: 0
+	right: 0
+	background: #fff
 	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
+.small-zoom
+	.logo__text
+		font-size: 16px
+		width: 180px
+	.header__mid
+		padding: 0
+	.outer-logo__img
+		width: 50px
+		margin-top: 11px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	.contact-outer
+		width: 49%
+	.col-logo
+		width: 30%
+	.col-extra
+		width: 20%
+
+.header__mid
+	border-bottom: 1px solid #C6C6C6
+	transition: 0.1s ease
+	padding: 13px 0
+.logo
+	display: inline-block
+.logo:hover
+	text-decoration: none
+.outer-logo__img
+	transition: 0.1s ease
+	display: inline-block
+	width: 72px
+.logo__img
+	width: 100%
+.logo__text
+	transition: 0.1s ease
+	display: inline-block
+	font-size: 20px
+	font-family: $head
+	color: #333
+	font-weight: bold
+	width: 220px
+	line-height: 1.3
+	vertical-align: middle
+	text-transform: uppercase
+	margin-left: 15px
+	span
+		letter-spacing: 0.022em
+
+// поиск и кнопка
+.extra-block
+	padding: 27px 0
 	text-align: right
 .sprite-main
 	background-image: url(../img/sprite-main.png)
@@ -64,46 +137,25 @@ a
 	vertical-align: middle
 	margin-top: -2px
 
-.header__mid
-	border-bottom: 1px solid #C6C6C6
-.logo
-	padding: 37px 0
-	display: inline-block
-.logo:hover
-	text-decoration: none
-.logo__text
-	display: inline-block
-	font-size: 24px
-	font-family: $head
-	color: #000
-	font-weight: bold
-	width: 250px
-	line-height: 1.3
-	vertical-align: middle
-	text-transform: uppercase
-	margin-left: 20px
-.btn
-	border: 3px solid #175F8B
-	color: #175F8B
-	padding: 5px 51px
-	transition: 0.15s
-	font-weight: bold
-	&:hover
-		color: #fff
-		background: #175F8B
-		text-decoration: none
+
+// соц. сети
 .contact
-	margin: 30px 0
+	padding: 23px 0
 	text-align: right
 	line-height: 1.6
 	vertical-align: middle
-	margin-top: 47px
+	> *
+		display: inline-block
+		vertical-align: middle
+header .contact .btn
+	margin-right: 30px
+footer .contact .btn
+	margin-bottom: 15px
 .sprite-soc
 	width: 30px
 	height: 30px
-	margin-top: 15px
-	margin-left: 5px
 	transition: 0.3s
+	margin-left: 5px
 .sprite-main_fb
 	background-position: 0 0
 	&:hover
@@ -128,8 +180,14 @@ a
 .sprite-main_in
 	background-position: -149px 0
 	&:hover
-		background-position: -149px -30px		
+		background-position: -149px -30px	
+.sprite-main_rss
+	background-position: -179px 0
+	&:hover
+		background-position: -179px -30px	
 
+
+// навигация
 .nav
 	position: relative
 	list-style-type: none
@@ -139,10 +197,10 @@ a
 	margin: 0
 	li
 		position: relative
-		padding: 14px 0
+		padding: 7.5px 0
 	li:hover	.nav_second
 		z-index: 1
-		opacity: 1
+		height: auto
 	a
 		color: #000
 		&:hover
@@ -162,24 +220,28 @@ a
 .nav_second
 	display: inline-block
 	transition: opacity .15s ease-in-out
-	opacity: 0
-	top: 50px
+	height: 0
+	overflow: hidden
+	top: 37px
 	left: 0
 	position: absolute
 	z-index: -1
 	border-left: 5px solid #0070B2
 	padding: 0 20px
 	background: #fff
-	box-shadow: 0px 0 2px rgba(0,0,0,0.5)
-	&:hover
-		z-index: 1
-		opacity: 1
 	li
 		padding: 8px 0
 	a:hover 
 		color: #0070b2
 	a:after
 		display: none
+
+// мобильные кнопки
+.mobile-icons
+	padding: 6px 0
+	text-align: right
+	.sprite-main
+		margin-left: 40px
 .sprite-main_mobile-glass
 	background-position: -1px -106px
 	width: 49px
@@ -192,9 +254,4 @@ a
 	background-position: -121px -100px
 	width: 41px
 	height: 35px
-
-.mobile-icons
-	padding: 37px 0
-	text-align: right
-	.sprite-main
-		margin-left: 40px
+	transition: 0.5s

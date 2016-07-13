@@ -11,12 +11,25 @@
 		display: none
 	h2
 		font-size: 40px
+	header 
+		.contact 
+			padding: 3px 0
+			.btn
+				margin-right: 0
+				margin-bottom: 10px
+				padding: 1px 70px
+			.social-links
+				display: block
+	.logo__text
+		font-size: 16px
+		width: 200px
+		
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 	.logo__text
-		margin-left: 19px
+		width: 169px
 	.big-link__text
 		font-size: 20px
 	.big-link
@@ -33,14 +46,30 @@
 	footer .contact
 		text-align: center
 		margin-top: 40px
-	footer .col-xs-6
+	.sprite-descr h4
 		display: none
 	.social-links a:nth-of-type(1) i
 		margin-left: 0
+	.col-logo
+		width: 39%
+	.col-extra
+		width: 20%
+	.contact-outer
+		width: 41%
+	.footer-social
+		max-width: 320px
+		margin: 0 auto
+	.footer-contact
+		display: block
+		margin: 80px 0
+	.parallax-front_bottom
+		top: 400px
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.header__nav, header .contact, .nav_footer, .header__top	
+	.header__nav, header .contact, .nav_footer, .header__top, .extra-block, .logo_footer
 		display: none 
 	.row__big-link .col-sm-6:nth-of-type(1) .big-link, .news-block
 		margin-bottom: 20px
@@ -53,31 +82,42 @@
 	.logo__text
 		font-size: 17px
 		width: 185px
-	.logo
-		padding: 20px 0
 	.mobile-icons .sprite-main
 		margin-left: 18px
+	.col-logo
+		width: 58%
+	.outer-logo__img
+		width: 50px
+	.btn_all-news
+		float: none
+	body
+		padding-top: 80px
+	.footer-contact
+		text-align: center
+		margin: 30px 0
+	.section_branches
+		background-image: url(../img/bg-branches.jpg)
+		background-size: cover
+		background-position: 50% 50%
+	.section_open-department
+		background-image: url(../img/bg-open-department.jpg)
+		background-size: cover
+	.attention-block p
+		font-size: 15px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 550px)
-	.header__mid .col-xs-7
-			width: 100%
-			text-align: center
-	.logo__text
-		text-align: left
-	.col-xs-5
-		width: 100%
 	.mobile-icons 
-		display: flex
-		justify-content: space-between
-		align-items: center
-		max-width: 280px
-		margin: 0 auto
-		padding: 5px 0 25px
-		.sprite-main
-			margin-left: 0
+		padding: 6px 0
 	.sprite-main_mobile-glass
 		margin-top: 0
+	.logo__text
+		display: none
+	.col-logo
+		width: 24%
+	.col-mobile-icons
+		width: 76%
+
 
 
 /* Extra Small Devices, Phones */
@@ -104,6 +144,8 @@
 		text-align: center
 	.branches li, .departments li
 		display: block
+		margin-left: auto
+		margin-right: auto
 	h2
 		font-size: 30px
 	.section_attention h2
@@ -111,9 +153,11 @@
 	.big-link__text
 		width: 130px
 		text-align: left
-	.icon_front__left
-		margin-left: 6px
-		margin-right: 15px
+	.icon_front
+		transform: scale(0.7)
+		margin-right: -15px
+	.big-link
+		padding: 0
 
 
 /* Custom, iPhone Retina */
@@ -144,7 +188,4 @@
 	/**/
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 

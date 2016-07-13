@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/jssor/jssor.slider.mini.js',
+		'./app/libs/pushy/pushy.min.js',
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

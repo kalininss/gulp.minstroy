@@ -10,7 +10,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+ 
 	<meta property="og:image" content="path/to/image.jpg">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -199,35 +199,15 @@
 
 	<main>
 
-		<!-- Start slider -->
-		<div id="slider_front" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1900px; height: 370px; overflow: hidden; visibility: hidden;">
-			<!-- Loading Screen -->
-			<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-				<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-			</div>
-			<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1900px; height: 370px; overflow: hidden;">
-				<div data-p="225.00" style="display: none;">
-					<img data-u="image" src="img/slide-1.jpg" alt="">
-					<div class="slider__text">BIM-технологии – <br>будущее строительной отрасли</div>
-					<a href="#" class="slider__btn">Подробнее</a>
-				</div>
-				<div data-p="225.00" style="display: none;">
-					<img data-u="image" src="img/purple.jpg" alt="">
-				</div>
-				<div data-p="225.00" data-po="80% 55%" style="display: none;">
-					<img data-u="image" src="img/blue.jpg" alt="">
-				</div>
-			</div>
-			<!-- Bullet Navigator -->
-			<div data-u="navigator" class="jssorb05" style="top:20px;right:16px;" data-autocenter="1">
-				<div data-u="prototype"></div>
-			</div>
-			<!-- Arrow Navigator -->
-			<span data-u="arrowleft" class="jssora22l" style="top:0px;left:50%; margin-left: -549px;width:40px;height:40px;" data-autocenter="2"></span>
-			<span data-u="arrowright" class="jssora22r" style="top:0px;right:50%; margin-right: -549px;width:40px;height:40px;" data-autocenter="2"></span>
-		</div><!-- End slider -->
-		
+		<div id="slider-front" class="owl-carousel owl-theme">
+		  <div class="item">
+		  	<img src="img/slide-1.jpg" alt="">
+		  	<div class="slider__text">BIM-технологии – <br>будущее строительной отрасли</div>
+				<a href="#" class="slider__btn">Подробнее</a>
+		  </div>
+		  <div class="item"><img src="img/blue.jpg" alt=""></div>
+		  <div class="item"><img src="img/purple.jpg" alt=""></div>
+		</div>
 
 		<div class="container">
 

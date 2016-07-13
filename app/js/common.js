@@ -1,5 +1,18 @@
 $(function() {
 
+	$("#slider-front").owlCarousel({
+
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      navigationText: false,
+      pagination: true,
+      addClassActive : true,
+      itemsScaleUp: true
+
+  });
+
 	//	параллакс
 	$(window).scroll(function() {
 		if ( $(window).width() > 768 ) {
@@ -24,34 +37,6 @@ $(function() {
 	$(window).bind("load", scrollMenu);
 	$(window).bind("resize", scrollMenu);
 	$(window).bind("orientationchange", scrollMenu);
-
-	// слайдер главный
-            
-	  var jssor_1_options = {
-	    $AutoPlay: false,
-	    $SlideDuration: 800,
-	    $SlideEasing: $Jease$.$OutQuint,
-	    $ArrowNavigatorOptions: {
-	      $Class: $JssorArrowNavigator$
-	    },
-	    $BulletNavigatorOptions: {
-	      $Class: $JssorBulletNavigator$
-	    }
-	  };
-	var slider_front = new $JssorSlider$("slider_front", jssor_1_options);
-	function ScaleSlider() {
-		var parentWidth = $('#slider_front').parent().width();
-		if (parentWidth) {
-			slider_front.$ScaleWidth(parentWidth);
-		}
-		else
-			window.setTimeout(ScaleSlider, 30);
-	}
-	ScaleSlider();
-	$(window).bind("load", ScaleSlider);
-	$(window).bind("resize", ScaleSlider);
-	$(window).bind("orientationchange", ScaleSlider);
-  	//responsive code end
 
 
 	//E-mail Ajax Send

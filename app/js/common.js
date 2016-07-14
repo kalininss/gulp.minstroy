@@ -1,5 +1,14 @@
 $(function() {
 
+	// панели
+	$(".open-panels__link").click(function(){
+		$(this).next().slideToggle(300);
+		$(this).toggleClass("opened");
+	});
+
+	// активация плагина галереи
+	$(".fancybox").fancybox();
+
 	// поиск в шапку
 	$(document).on('click', function(e) {
 	  if (!$(e.target).closest("header").length) {

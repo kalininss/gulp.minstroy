@@ -27,12 +27,14 @@
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
 	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "libs/fancybox/jquery.fancybox.css", false, "all" );</script><!-- Дополнительные файлы -->
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
 		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css"><!-- Дополнительные файлы -->
 		<link rel="stylesheet" href="css/main.min.css">
 	</noscript>
 
@@ -210,80 +212,110 @@
 
 	</header>
 
+	<!-- На этой странице подключается дополнительная библиотека (CSS & JS files) в 3-х местах -->
 
-
-	<main>
+	<main> 
 
 		<div class="container">
 			
 			<nav class="breadcrump">
 				<ul>
 					<li><a href="/">Главная</a></li>
-					<li>О ведомстве</li>
+					<li>Пресс-центр</li>
+					<li>Все новости</li>
 				</ul>
 			</nav>
 
 			<div class="row">
 
-				<article class="col-md-9">
-					<h1>Открытые данные</h1>
-					<p><b>В настоящем разделе представлена информация о деятельности Министерства строительства и жилищно-коммунального хозяйства Российской Федерации, размещаемая в сети "Интернет" в форме открытых данных.</b></p>
-					<p>Размещение государственными органами и органами местного самоуправления информации о своей деятельности в сети "Интернет" в форме открытых данных - форма размещения государственными органами и органами местного самоуправления информации о своей деятельности в сети "Интернет", при которой указанная информация размещается в сети "Интернет" в виде массивов данных, организованных в формате, обеспечивающем их автоматическую обработку в целях повторного использования без предварительного изменения человеком (машиночитаемый формат), и на условиях ее свободного использования.</p>
-					<p>Размещение государственными органами и органами местного самоуправления информации о своей деятельности в сети "Интернет" в форме открытых данных осуществляется в рамках реализации подпункта "г" пункта 2 Указа Президента Российской Федерации от 7 мая 2012 года № 601 "Об основных направлениях совершенствования системы государственного управления".</p>
-					<h4><b>Условия использования:</b></h4>
-					<p>Пользователь может использовать (в том числе повторно) открытые данные свободно, бесплатно, бессрочно, безвозмездно и без ограничения территории использования, в том числе имеет право копировать, публиковать, распространять открытые данные, видоизменять открытые данные и объединять их с другой информацией, использовать открытые данные в коммерческих целях, использовать для создания программ для ЭВМ и приложений.</p>
-					<h4><b>При использовании открытых данных Пользователь обязан:</b></h4>
-					<p>использовать открытые данные только в законных целях;<br>не искажать открытые данные при их использовании;<br>сохранять ссылку на источник информации при использовании открытых данных.</p>
-					<a href="#">Реестр открытых данных</a>
-					<h4>Количество загрузок файла реестра: 63</h4>
-					<h4>Количество просмотров реестра открытых данных: 49281</h4>
-				</article>
-
-				<aside class="col-md-3">
-					<div class="widget-news">
-						<h3 class="news__head">Новости</h3>
-						<div class="news-block">
-							<div class="news-date">17 июня, 14:40</div>
-							<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+				<div class="col-md-9">
+					<div class="front-news clearfix">
+						<h3 class="news__head">Новости ведомства</h3>
+						<div class="row">
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
 						</div>
-						<div class="news-block">
-							<div class="news-date">17 июня, 14:40</div>
-							<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
-						</div>
-						<div class="news-block">
-							<div class="news-date">17 июня, 14:40</div>
-							<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
-						</div>
-						<a href="#" class="btn btn_all-news">Все новости Ведомства</a>
 					</div>
-				</aside>
 
-				<article class="col-md-12 col-md">
-					<h4><b>Искать в открытых данных:</b></h4>
-					<form class="form_search-file form_search-csv" action="">
-						<input type="text" class="search-csv__input">
-						<input type="submit" value="Найти" class="submit_blue">
-						<h4>Всего наборов открытых данных: 37. Из них 37 в формате CSV</h4>
-					</form>
-					<div class="table-wrapper">
-						<table class="csv-table">
-							<thead>
-								<tr>
-									<td>№</td>
-									<td>Наименование набора данных</td>
-									<td>Обновлено</td>
-									<td>Формат представления</td>
-								</tr>
-							</thead>
-							<tr>
-								<td>1.</td>
-								<td><a href="#">Статистическая информация по результатам плановых и внеплановых проверок</a></td>
-								<td>15 Января 2016 12:19 (2)</td>
-								<td>CSV</td>
-							</tr>
-						</table>
+					<div class="front-news clearfix">
+						<h3 class="news__head">Новости Строительства и ЖКХ</h3>
+						<div class="row">
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="front-news clearfix">
+						<h3 class="news__head">Анонсы</h3>
+						<div class="row">
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+							<div class="col-sm-4 col-xs-6 col-xxs-12 news-block">
+								<div class="news-date">17 июня, 14:40</div>
+								<a href="#" class="thumbnail-effect"><img src="img/thumbnail-news.jpg" alt="" class="thumbnail-news"></a>
+								<a href="#" class="text_black"><p>Минстрой России и Газпром будут сотрудничать в сфере инновационного развития</p></a>
+							</div>
+						</div>
+						<a href="#" class="btn btn_all-news btn_all-news_nonfloat">Все новости Ведомства</a>
 					</div>
 				</div>
+
+				<aside class="col-md-3">
+
+					<div class="widget-panel">
+						<p class="calendar__date">ИЮНЬ 2016</p>
+						<table class="table-calendar">
+							<tr class="date-name"><td>ПН</td><td>ВТ</td><td>СР</td><td>ЧТ</td><td>ПТ</td><td>СБ</td><td>ВС</td></tr>
+							<tr><td class="date_active">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+							<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+							<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+							<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+						</table>
+					</div>
+
+					<div class="widget-panel widget-subscribe">
+						<p>ПОДПИСКА НА НОВОСТИ</p>
+						<form action="" class="form-subscribe">
+							<input type="text" name="email" placeholder="Введите E-mail" class="input_subscribe">
+							<input type="submit" value="Подписаться" class="submit_grey">
+						</form>
+					</div>
+
+				</aside>
 
 			</div>
 
@@ -292,7 +324,7 @@
 
 
 	</main>
-
+	
 
 
 	<footer>
@@ -331,7 +363,7 @@
 
 			</div><!-- End row -->
 		</div><!-- End container -->
-
+		
 	</footer>
 
 	<!--[if lt IE 9]>
@@ -344,6 +376,7 @@
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.js", "async" : false},
+		{"src" : "libs/fancybox/jquery.fancybox.pack.js", "async" : false},//дополнительный файл
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>

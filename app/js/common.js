@@ -14,10 +14,7 @@ $(function() {
 	$(".icon-x").click(function(){
 		$(".header__search").slideUp(300);//закрытие
 	});
-	// $(".header__search__input").blur(function(){
-	// 	$(".header__search").slideUp(300);//закрытие
-	// });
-
+	
 	// сладер на главной
 	$("#slider-front").owlCarousel({
       navigation : true, // Show next and prev buttons

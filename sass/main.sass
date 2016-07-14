@@ -27,7 +27,12 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-
+input
+	border-radius: 2px
+	outline: none
+	border: 1px solid #C5C5C5
+	line-height: 40px
+	font-size: 16px
 	
 
 // -------
@@ -170,10 +175,10 @@ body textarea:required:valid
 	text-shadow: 0px 0 4px rgba(131,215,255,0.1), 0px 0 5px rgba(0,0,0,0.5)
 .slider__btn
 	color: #000
-	display: inline-block
 	background: #fff
 	border-radius: 2px
 	position: absolute
+	text-decoration: none
 	width: 212px
 	left: 50%
 	margin-left: -106px
@@ -226,6 +231,10 @@ body textarea:required:valid
 .icon_front__right
 	background-position: -152px 0
 	margin-right: 10px
+.news-block	a
+	text-decoration: none
+	&:hover
+		text-decoration: underline
 .news-date
 	font-size: 16px
 	font-weight: bold
@@ -302,6 +311,8 @@ body textarea:required:valid
 			transition: 0.15s
 			display: inline-block
 			line-height: 2.15
+			text-decoration: none
+			color: #175f8b
 		&:hover
 			background: #175f8b
 			a
@@ -322,6 +333,7 @@ body textarea:required:valid
 	margin: 1em 0
 .attention-block
 	text-align: center
+	text-decoration: none
 	p
 		margin-bottom: 0
 		font-size: 18px
@@ -384,7 +396,7 @@ footer .logo
 	width: 72px
 .nav_footer
 	text-align: center
-	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
+	box-shadow: 0 1px 5px rgba(0,0,0,0.36)
 .nav_footer li 
 	margin-left: 20px
 	margin-right: 20px
@@ -420,6 +432,9 @@ footer .logo
 	justify-content: space-between
 	a
 		color: #333
+		text-decoration: none
+		&:hover
+			text-decoration: underline
 
 
 
@@ -529,6 +544,297 @@ footer .logo
 .no-csstransforms3d .pushy-submenu-closed ul
 	max-height: none
 	display: none
+
+
+
+
+
+// -------------------
+// Страница О Ведомсте
+// -------------------
+.bg-title
+	background-image: url(../img/bg-title.jpg)
+	background-size: cover
+	font-size: 72px
+	text-align: center
+	color: #fff
+	text-shadow: 0px 0 4px rgba(131,215,255,0.1), 0px 0 5px rgba(0,0,0,0.5)
+	h2
+		margin: 52px 0
+.breadcrump
+	ul
+		list-style-type: none
+		padding-left: 0
+		li
+			display: inline-block
+			color: #000
+			font-size: 13px
+			&:after
+				content: "-"
+				padding: 0 9px
+			&:last-of-type:after
+				content: ""
+
+
+
+//
+.file-list
+	padding: 0
+	list-style-type: none
+	color: #666
+	li
+		margin-bottom: 15px
+	li > *
+		display: inline-block
+		vertical-align: middle
+		a
+			margin-right: 24px
+			color: #666
+.sprite-main_pdf
+	background-position: 0 -139px
+	width: 70px
+	height: 50px
+	margin-right: 26px
+.sprite-main_show
+	width: 24px
+	height: 19px
+	background-position: -178px -90px
+	margin-right: 11px
+.sprite-main_download
+	width: 24px
+	height: 19px
+	background-position: -178px -113px
+	margin-right: 11px
+.file-list__head
+	font-family: $head
+
+
+
+.widget-news 
+	font-size: 14px
+	margin-bottom: 30px
+	.news-date
+		padding-bottom: 0
+		font-size: 14px
+	.btn
+		float: none
+	p
+		margin-top: 0
+	.news__head
+		font-size: 30px
+
+
+
+.list-leadership
+	border-bottom: 1px solid #AEAEAE
+	padding-left: 0
+	list-style-type: none
+	padding-bottom: 50px
+	padding-top: 50px
+	color: #555
+	margin: 0
+	&:first-of-type
+		padding-top: 25px
+	li
+		padding-bottom: 65px
+		&:last-of-type
+			padding-bottom: 0
+.thumbnail-leadership
+	border: 2px solid #555555
+.leadership-name
+	font-family: $head
+	font-weight: bold
+	font-size: 24px
+.leadership-name_big
+	font-size: 30px
+.leadership-descr
+	font-family: $head
+	font-size: 18px
+	line-height: 30px
+	max-width: 500px
+.leadership-descr_big
+	font-size: 24px
+.leadership__block
+	display: inline-block
+	width: 100%
+	margin-left: 20px
+	vertical-align: top
+.leadership__block_big
+	margin: 0
+.btn_grey
+	border-color: #AEAEAE
+	font-size: 18px
+	width: 180px
+	height: 45px
+	padding: 0
+	text-align: center
+	line-height: 38px
+	font-weight: normal
+	color: #555
+	border-radius: 2px
+	&:hover
+		background-color: #AEAEAE
+
+.leadership-icon
+	font-size: 18px
+	span
+		display: inline-block
+		vertical-align: middle
+		width: calc(100% - 70px)
+.sprite-main_department
+	background-position: -73px -146px
+	width: 40px
+	height: 40px
+	margin-right: 23px
+.sprite-main_department_add
+	background-position: -121px -143px
+	width: 40px
+	height: 40px
+	margin-right: 23px
+.list-leadership_icons
+	border-bottom: none
+	.leadership-name
+		margin: 0
+		line-height: 1
+	.leadership-descr
+		margin-top: 10px
+	.leadership-icon
+		margin: 10px 0
+
+
+.departments_grey
+	margin-bottom: 100px
+.departments_grey_head
+	font-size: 36px
+	text-transform: none
+	margin: 50px 0 30px
+.departments_grey__list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	a
+		text-decoration: none
+	li
+		width: 100%
+		max-width: 370px
+		height: 168px
+		display: inline-block
+		border: 2px solid #AEAEAE
+		padding: 24px 40px 20px
+		margin-right: 12px
+		vertical-align: top
+		margin-bottom: 22px
+	a:hover li
+		border-color: #333
+.departments_grey_text
+	font-family: $head
+	text-align: center
+	font-size: 16px
+	color: #595959
+.sprite-departments 
+	background-image: url(../img/sprite-departments.png)
+	width: 65px
+	height: 51px
+	display: block
+	margin: 0 auto
+.sprite-departments_2
+	background-position: -65px 0
+.sprite-departments_3
+	background-position: -130px 0
+.sprite-departments_4
+	background-position: -195px 0
+.sprite-departments_5
+	background-position: -260px 0
+.sprite-departments_6
+	background-position: -325px 0
+.sprite-departments_7
+	background-position: -390px 0
+.sprite-departments_8
+	background-position: -455px 0
+
+
+
+// СТРАНИЦА ФИЛИАЛЫ
+.leadership_branche
+	padding-bottom: 0
+	ul
+		border: none
+		li
+			border-bottom: 1px solid #AEAEAE
+			padding-bottom: 47px
+			padding-top: 47px
+			&:first-child
+				padding-top: 0
+			&:last-child
+				border: none
+				margin-bottom: 70px
+	.leadership-name
+		line-height: 1
+		margin-top: 0
+.btn_grey_big
+	width: 100%
+	max-width: 257px
+.btn_grey_second
+	margin-left: 23px
+.leadership_branche__table
+	font-size: 14px
+	margin-bottom: 22px
+	td
+		padding-right: 10px
+		vertical-align: top
+		&:nth-child(even)
+			padding-right: 0
+	a
+		text-decoration: none
+		color: #333
+		&:hover
+			text-decoration: underline
+
+
+// ВИДЖЕТ СУБЪЕКТЫ РФ
+.subjects-head
+	font-size: 30px
+	color: #0071ad
+
+.subjects-list
+	list-style-type: none
+	padding-left: 20px
+	li
+		line-height: 2.5
+		&:before
+			transform: rotate(-90deg)
+			display: inline-block
+			clear: both
+			margin-right: 22px
+			content: ""
+			width: 10px
+			height: 7px
+			background-image: url(../img/sprite-main.png)
+			background-position: -73px -79px
+		a
+			text-decoration: none
+			color: #000
+			font-size: 14px
+			&:hover
+				text-decoration: underline
+
+
+.submit_blue
+	background: #007DC7
+	color: #fff
+	padding: 0 55px
+	border-radius: 0
+	border-color: #007DC7
+	margin-left: 20px
+thead
+	font-weight: bold
+	font-size: 18px
+.csv-table
+	margin-bottom: 100px
+	margin-top: 30px
+	td
+		padding: 3px 10px
+
 
 
 

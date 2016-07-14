@@ -11,9 +11,16 @@ body
 	font-family: $main
 	overflow-x: hidden
 	color: #333
+main
+	min-height: 800px
 .hidden
 	display: none
 h1
+	font-family: $head
+	font-weight: bold
+	color: #333
+	font-size: 36px
+	margin: 0.25em 0
 h2
 	font-size: 60px
 	font-family: $head
@@ -22,10 +29,16 @@ h2
 	margin: 0.4em 0
 h3
 	font-size: 24px
+	margin: 0.5em 0
 h4
 	font-size: 12px
+	font-weight: normal
+article 
+	h4
+		font-size: 16px
 a
-	color: #175F8B
+	color: #006fb1
+	text-decoration: underline
 .text_black
 	color: #000
 .text_underline
@@ -36,6 +49,8 @@ a
 	padding: 1px 51px
 	transition: 0.15s
 	font-weight: bold
+	text-decoration: none
+	display: inline-block
 	&:hover
 		color: #fff
 		background: #175F8B
@@ -50,8 +65,8 @@ header
 	top: 0
 	right: 0
 	background: #fff
-	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
 .small-zoom
+	box-shadow: 0 0px 9px rgba(0,0,0,0.36)
 	.logo__text
 		font-size: 16px
 		width: 180px
@@ -261,6 +276,7 @@ footer .contact .btn
 		height: auto
 	a
 		color: #000
+		text-decoration: none
 		&:hover
 			text-decoration: none
 		&:after

@@ -37,9 +37,10 @@ gulp.task('scripts', function() {
 		'./app/libs/pushy/pushy.min.js',
 		'./app/libs/owl-carousel/owl.carousel.min.js',
 		'./app/libs/fancybox/jquery.fancybox.js',
+		'./app/libs/lighttabs/lighttabs.js',
 		])
 		.pipe(concat('libs.js'))
-		// .pipe(uglify()) //Minify libs.js
+		.pipe(uglify()) //Minify libs.js
 		.pipe(gulp.dest('./app/js/'));
 });
 

@@ -1,5 +1,32 @@
 $(function() {
 
+	// Активатор версии для слабовидящих
+	$(".versionContrastActivator").click(function(){
+		if ( $(this).hasClass('versionContrastDeactivator') ) {
+			$('.versionContrastActivator h4').html('Версия для слабовидящих'); 
+			$(this).addClass("versionContrastDeactivator");
+		}
+		else {
+			$('.versionContrastActivator h4').html('ОБЫЧНАЯ ВЕРСИЯ'); //  сохраняем обьект в переменную myUl
+		}
+		$("body").toggleClass("contrast");
+		return false;
+	});
+
+	// соглашение правил в форме
+	$("#acceptRulesLabel").click(function(){
+		console.log("done1");
+		if ( $("#acceptRules").attr("checked") != 'checked' ) {
+			$("#acceptSubmit").prop('disabled', true);
+			console.log("done");
+		}
+		else $("#acceptSubmit").prop('disabled', false);
+
+	});
+
+  //	активация вкладок обратной связи
+  $(".tabs").lightTabs();
+
 	// панели
 	$(".open-panels__link").click(function(){
 		$(this).next().slideToggle(300);
@@ -47,7 +74,7 @@ $(function() {
 		}
 	});
 
-	// скролл меню
+	// уменьшение меню при скролле
 	function scrollMenu() {
 		if ( $(window).width() > 1200 ) {
 			$(window).scroll(function () {
